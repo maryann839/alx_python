@@ -14,7 +14,7 @@ if number < 0:
 import sys
 number = 0
 if number == 0:
-  print("{} is zero".format(number))
+  print("0 is zero")
 import sys
 number = 98
 if number != 0:
