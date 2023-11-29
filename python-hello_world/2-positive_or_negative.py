@@ -6,16 +6,10 @@ number = random.randint(-10, 10)
 number = 98
 if number > 0:
   print("{} is positive".format(number))
-import sys 
-#this for a negative number
-number = -98
-if number < 0:
-   print("{} is negative".format(number))
-import sys
-number = 0
-if number == 0:
-  print("0 is zero")
-import sys
+elif number == 0:
+   print("{} is zero".format(number))
+elif number < 0:
+  print("{} is negative".format(number))
 number = 98
 if number != 0:
   print("TypeError")
