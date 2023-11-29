@@ -6,10 +6,12 @@ number = 98
 if number > 0:
   print("{} is positive".format(number))
 import sys
+print(end="\n")
 number = -98
 if number < 0:
    print("{} is negative".format(number))
 import sys
+print(end="\n")
 number = 0
 if number == 0:
   print("{} is zero".format(number))
