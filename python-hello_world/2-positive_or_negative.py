@@ -9,11 +9,12 @@ import sys
 number = -98
 if number < 0:
    print("{} is negative".format(number), end="\n")
-   import sys
+import sys
 number = 0
 if number == 0:
   print("{} is zero".format(number))
-  import sys
+import sys
 number = 98
-if number is 0:
-  print(is zero)
+if number != 0:
+  print("TypeError")
+import sys
