@@ -1,3 +1,3 @@
 # numbers = range(10)
-for number in range(99):
-  print("{:02}".format(number), end=", ")
+for i in range(99):
+  print("{:02}".format(i), end=", " if i < 98 else "\n" )
