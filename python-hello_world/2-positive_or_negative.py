@@ -2,16 +2,10 @@
 import random
 number = random.randint(-10, 10)
 # YOUR CODE HERE
-# print(number, end=" ")
+# for char in number:
 if number > 0:
-  print(" is positive")
+    print("{} is positive".format(number))
 elif number == 0:
-   print(" is zero")
+    print("{} is zero".format(number)) 
 else:
-  print(" is negative")
-# if number != 0:
-#   print("TypeError")
-
-
-#Check if the number is positive, negative, or zero
-print(f"{number} is {'positive' if number > 0 else 'zero' if number == 0 else 'negative'}")
+    print("{} is negative".format(number))
