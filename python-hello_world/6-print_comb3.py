@@ -1,10 +1,5 @@
-#!/usr/bin/python3
-import random
-
-number = random.randint(-10, 10)
-
-# Check if the number is positive, negative, or zero
-print(f"{number} is {'positive' if number > 0 else 'zero' if number == 0 else 'negative'}")
-
-# Check if the number is positive, negative, or zero
-print(f"{number} is {'positive' if number > 0 else 'zero' if number == 0 else 'negative'}")
+#a program that prints all possible combinations of two digits 
+for tens in range(10):
+    for units in range(tens + 1, 10):
+        print("{}{}".format(tens, units), end=", " if units < 89 else "\n")
+print()
