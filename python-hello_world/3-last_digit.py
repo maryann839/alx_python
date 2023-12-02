@@ -8,5 +8,7 @@ if Last_digit > 5:
 elif Last_digit == 0:
    print('Last digit of', number, 'is', Last_digit , 'and is 0')
 else:
-   print('Last digit of', -number, 'is', -Last_digit , 'and is less than 6 and not 0', end="\n")
+   pass
+if number < 0:
+   print('Last digit of', number, 'is', -Last_digit , 'and is less than 6 and not 0', end="\n")
 import sys 
