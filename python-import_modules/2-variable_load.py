@@ -1,4 +1,4 @@
-import variable_load_2 
-value_of_a = variable_load_2.a
+from variable_load_2 import a
+
 if __name__ == "__main__":
- print("a =", value_of_a)
+ print("a =", a)
