@@ -2,8 +2,8 @@ import sys
 
 def display_arguments():
     num_arguments = len(sys.argv) - 1 
-    plural = 's' if  num_arguments != 1 else ''
-    print("{} argument:{}".format(num_arguments, plural, '.' if num_arguments == 0 else 's'))
+    # plural = 's' if  num_arguments != 1 else ''
+    print("{} argument{}".format(num_arguments, 's' if  num_arguments != 1 else ':' , '.' if num_arguments == 0 else 's'))
    
   
     for i, arg in enumerate(sys.argv[1:], start=1):
