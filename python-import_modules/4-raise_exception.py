@@ -5,3 +5,4 @@ try:
     raise_exception()
 except NameError as ne:
   print("Exception has been raised")
+
