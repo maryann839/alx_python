@@ -4,4 +4,4 @@ def raise_exception():
 try:
     raise_exception()
 except NameError as ne:
-  print("Exception raised")
+  print("Exception has been raised")
