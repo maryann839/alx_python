@@ -2,8 +2,7 @@ def safe_print_division(a, b):
    try:
       result = a / b
    except ZeroDivisionError:
-      print('Division by Zero is invald')
-      raise
+      return None
    except Exception as e:
       print('an error occured')
       return None
