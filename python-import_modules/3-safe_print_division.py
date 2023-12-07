@@ -11,7 +11,8 @@ def safe_print_division(a, b):
       print("indide result: {}".format(result))
       return result
    finally:
-     print("{} / {} = {}".format(a, b, (a/ b)))
+      pass
+   #   print("{} / {} = {}".format(a, b, (a/ b)))
 # a = 10
 # b = 5
 # result = safe_print_division(a, b)
