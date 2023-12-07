@@ -11,11 +11,11 @@ def safe_print_division(a, b):
       print("indide result: {}".format(result))
       return result
    finally:
-     pass
-a = 10
-b = 5
-result = safe_print_division(a, b)
-print("{} / {} = {}".format(a, b, (a/ b)))
+     print("{} / {} = {}".format(a, b, (a/ b)))
+# a = 10
+# b = 5
+# result = safe_print_division(a, b)
+# print("{} / {} = {}".format(a, b, (a/ b)))
 
 # try:
 #     x = 1 / 2
