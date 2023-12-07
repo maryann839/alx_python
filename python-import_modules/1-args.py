@@ -3,6 +3,7 @@ import sys
 def display_arguments():
     num_arguments = len(sys.argv) - 1 
     print("{} argument{}:".format(num_arguments, 's' if  num_arguments != 1 else ''),  end="")
+    print("." if num_arguments <= 0 else " ")
     print()
   
 
