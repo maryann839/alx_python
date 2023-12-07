@@ -8,7 +8,7 @@ def safe_print_division(a, b):
       print('an error occured')
       return None
    else:
-      print("indide result: {}".format(result))
+      print("inside result: {}".format(result))
       return result
    finally:
       pass
