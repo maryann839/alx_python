@@ -1,7 +1,9 @@
 def multiple_returns(sentence):
-    if not isinstance(sentence, tuple) or not sentence:
-       return None
-    length = len(sentence)
-    first = sentence[0]
-    return("length: {} - First character:{}".format(length, first))
+    if not sentence:
+       return 0, None
+    else:
+        return(len(sentence), sentence[0])
+   
+    
+# print("length: {} - First character:{}".format(len, sentence))
   
