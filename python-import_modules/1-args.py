@@ -2,7 +2,7 @@ import sys
 
 def display_arguments():
     num_arguments = len(sys.argv) - 1 
-    plural = 's' if  num_arguments != 1 else ''
+    plural = 's' if  num_arguments > 1 else ''
     print("{} argument{}{}".format(num_arguments, plural, '.' if num_arguments == 0 else 's'))
    
   
