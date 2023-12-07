@@ -1,5 +1,7 @@
 def raise_exception():
-    if not isinstance(type, int):
-        raise NameError('input must be an integer')
-    print('{}!'.format(type))
-raise_exception()
+    raise NameError("An exception type")
+
+try:
+    raise_exception()
+except NameError as ne:
+  print("Exception raised")
