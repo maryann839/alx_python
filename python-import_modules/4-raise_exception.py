@@ -1,8 +1,8 @@
 def raise_exception():
-    raise NameError("An exception type")
+    raise TypeError("An exception type")
 
 try:
     raise_exception()
-except NameError as ne:
+except TypeError as te:
   print("Exception has been raised")
 
