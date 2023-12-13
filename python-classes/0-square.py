@@ -13,4 +13,3 @@ class Square:
 
 Square1 = Square(3)
 
-print(Square1.area)
