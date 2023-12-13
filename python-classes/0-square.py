@@ -11,6 +11,6 @@ class Square:
     def area(self):
         return self.__size**2
 
-Square1 = Square()
+Square1 = Square(3)
 
-# print("_Square_size:", Square1.area)
+print(Square1.area)
