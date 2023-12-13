@@ -22,8 +22,6 @@ class Square:
     # def set_size(self, value):
     #         self.__size = value
 
-square1 = Square()
-print("Size :", square1.get_size())
 
 
 
