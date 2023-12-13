@@ -12,5 +12,5 @@ class Square:
         return self.__size**2
 
 Square1 = Square(3)
-print(Square1.get_size())
+print()
 
