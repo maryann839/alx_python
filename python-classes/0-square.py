@@ -7,10 +7,10 @@ class Square:
     
     def set_size(self, size):
         self.__size = size
-        
+
     def area(self):
         return self.__size**2
 
-Square1 = Square(3)
+# Square1 = Square(3)
 
-print("_Square_size:", Square1.area)
+# print("_Square_size:", Square1.area)
