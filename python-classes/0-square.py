@@ -1,12 +1,9 @@
+#!/usr/bin/env python3class Square:
+# creating  a class  
 class Square:
-    def __init__(self, size):
+    # specifying the attributes using __init__ 
+   def __init__(self, size):
         self.__size = size
-
-    # def get_size(self):
-    #     return self.__size
-    
-    # def set_size(self, size):
-    #     self.__size = size
 
 square1 = Square()
 
