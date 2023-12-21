@@ -57,7 +57,7 @@ class Rectangle(Base):
     getters for private attributes, y"""
     def get_y(self):
         return self.__x
-
+   
     """
     Setters for private attributes, y"""
     def set_y(self, value):
