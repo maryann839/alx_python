@@ -34,9 +34,13 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
     def set_width(self, value):
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
         # self.__validate_interger(value, 'width')
         # self.__validate_positive(value, 'width')
-        self.__width = value
+         self.__width = value
     
     """
     getter for private attributes, height"""
