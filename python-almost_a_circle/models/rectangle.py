@@ -17,6 +17,7 @@ class Rectangle(Base):
         self.__x = x 
         self.__y = y
     """
+    a fuction to get the private attributes
     getters for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
