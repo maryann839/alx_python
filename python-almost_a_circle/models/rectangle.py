@@ -21,7 +21,8 @@ class Rectangle(Base):
     getters for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
-    def get_width(self):
+    @property
+    def width(self):
          """
         a fuction to get the private attributes
         getters for private attributes width 
@@ -33,7 +34,8 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
-    def set_width(self, value):
+    @width.setter
+    def width(self, value):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -47,7 +49,8 @@ class Rectangle(Base):
 
     """
     getter for private attributes, height"""
-    def get_height(self):
+    @property
+    def height(self):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -56,7 +59,8 @@ class Rectangle(Base):
 
     """
     setter for private attributes height """
-    def set_height(self, value):
+    @height.setter
+    def height(self, value):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -65,7 +69,8 @@ class Rectangle(Base):
 
     """
     getters for private attributes, x"""
-    def get_x(self):
+    @property
+    def x(self):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -74,7 +79,8 @@ class Rectangle(Base):
 
     """
     setters for private attributes x """
-    def set_x(self, value):
+    @x.setter
+    def x(self, value):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -83,7 +89,8 @@ class Rectangle(Base):
 
     """
     getters for private attributes, y"""
-    def get_y(self):
+    @property
+    def y(self):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
@@ -92,7 +99,8 @@ class Rectangle(Base):
    
     """
     Setters for private attributes, y"""
-    def set_y(self, value):
+    @y.setter
+    def y(self, value):
          """
     setter for private attributes width 
     this shows the accesibility of the private attribute width
