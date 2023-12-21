@@ -45,39 +45,71 @@ class Rectangle(Base):
     """
     getter for private attributes, height"""
     def get_height(self):
-        return self.__height
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         return self.__height
 
     """
     setter for private attributes height """
     def set_height(self, value):
-        self.__height = value
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         self.__height = value
 
     """
     getters for private attributes, x"""
     def get_x(self):
-        return self.__x
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         return self.__x
 
     """
     setters for private attributes x """
     def set_x(self, value):
-        self.__x = value
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         self.__x = value
 
     """
     getters for private attributes, y"""
     def get_y(self):
-        return self.__x
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         return self.__x
    
     """
     Setters for private attributes, y"""
     def set_y(self, value):
-        self.__x = value
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         self.__x = value
     
     def area(self):
-      return  self.__width * self.__height
+       """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+       return  self.__width * self.__height
     """
     string """
     def __str__(self):
-        return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
+         """
+    setter for private attributes width 
+    this shows the accesibility of the private attribute width
+    a setter is also assigned to it"""
+         return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
 
     
     """
