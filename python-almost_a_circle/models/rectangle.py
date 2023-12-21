@@ -63,10 +63,13 @@ class Rectangle(Base):
     def set_y(self, value):
         self.__x = value
     
+    def area(self):
+      return  self.__width * self.__height
     """
     string """
     def __str__(self):
-        return super().__str__()
+        return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
+
     
     """
     method of validation
