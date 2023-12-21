@@ -45,7 +45,11 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
          self.__validate_interger(value, 'width')
+         """
+         validation of the model"""
          self.__validate_positive(value, 'width')
+         """
+         validation of the model"""
          self.__width = value
     
     """
@@ -70,7 +74,11 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
          self.__validate_interger(value, 'height')
+         """
+         validation of the model"""
          self.__validate_positive(value, 'height')
+         """
+         validation of the model"""
          self.__height = value
 
     """
@@ -92,7 +100,11 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
          self.__validate_interger(value, 'x')
+         """
+         validation of the model"""
          self.__validate_non_negative(value, 'x')
+         """
+         validation of the model"""
          self.__x = value
 
     """
@@ -114,7 +126,11 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
          self.__validate_interger(value, 'y')
+         """
+         validation of the model"""
          self.__validate_non_negative(value, 'y')
+         """
+         validation of the model"""
          self.__y = value
     
     def area(self):
@@ -137,15 +153,30 @@ class Rectangle(Base):
     method of validation
     """
     def __validate_interger(self, value, attribute_name):
+         """
+         validation of the model"""
          if not isinstance(value, int):
+              """
+         validation of the model"""
               raise TypeError(f'{attribute_name} must be an integer')
-         
+    """
+         validation of the model"""    
     def __validate_positive(self, value, attribute_name):
+       """
+         validation of the model"""
        if value <=0:
+          """
+         validation of the model"""
           raise ValueError(f'{attribute_name} must be > 0')
        
+    """
+         validation of the model"""
     def __validate_non_negative(self, value, attribute_name):
+       """
+         validation of the model"""
        if value <=0:
+          """
+         validation of the model"""
           raise ValueError(f'{attribute_name} must be >= 0')
    
     
