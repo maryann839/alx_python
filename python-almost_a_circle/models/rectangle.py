@@ -22,7 +22,12 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
     def get_width(self):
-        return self.__width
+         """
+        a fuction to get the private attributes
+        getters for private attributes width 
+        this shows the accesibility of the private attribute width
+        a setter is also assigned to it"""
+         return self.__width
     
     """
     setter for private attributes width 
