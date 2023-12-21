@@ -139,14 +139,25 @@ class Rectangle(Base):
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
        return  self.__width * self.__height
+    
+    """
+    dislpay section"""
+    def display(self):
+     """
+     replace the rectangle instanc with #
+    """
+     for _ in range(self.height):
+          print("#"* self.height)
+
     """
     string """
     def __str__(self):
-         """
-    setter for private attributes width 
-    this shows the accesibility of the private attribute width
-    a setter is also assigned to it"""
-         return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
+        """
+        setter for private attributes width 
+        this shows the accesibility of the private attribute width
+        a setter is also assigned to it"""
+         
+        return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
 
     
     """
@@ -178,7 +189,9 @@ class Rectangle(Base):
           """
          validation of the model"""
           raise ValueError(f'{attribute_name} must be >= 0')
+    
    
+
     
     
 
