@@ -76,7 +76,7 @@ class Rectangle(Base):
          self.__validate_interger(value, 'height')
          """
          validation of the model"""
-         self.__validate_positive(value, 'height')
+         self.__validate_normal(value, 'height')
          """
          validation of the model"""
          self.__height = value
@@ -146,10 +146,10 @@ class Rectangle(Base):
      """
      replace the rectangle instanc with #
     """
+     for _ in range(self.y):
+          print()
      for _ in range(self.height):
-          print("#"* self.width)
-     for _ in range(self.x):
-          print("#"* self.y)
+          print(" "* self.x + "#"* self.width)
 
     """
     string """
@@ -174,7 +174,7 @@ class Rectangle(Base):
               raise TypeError(f'{attribute_name} must be an integer')
     """
          validation of the model"""    
-    def __validate_positive(self, value, attribute_name):
+    def __validate_normal(self, value, attribute_name):
        """
          validation of the model"""
        if value <=0:
