@@ -43,6 +43,9 @@ class Rectangle(Base):
          self.__width = value
     
     """
+    getters and setters for all private attributes"""
+
+    """
     getter for private attributes, height"""
     def get_height(self):
          """
