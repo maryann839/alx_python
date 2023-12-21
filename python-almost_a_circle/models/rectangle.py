@@ -157,7 +157,7 @@ class Rectangle(Base):
         this shows the accesibility of the private attribute width
         a setter is also assigned to it"""
          
-        return f"Rectangle #{self.id}: width={self.__width}, height={self.__height}, x={self.__x}, y={self.__y}, area={self.area()}"
+        return f"[Rectangle] ({self.id})  {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     
     """
