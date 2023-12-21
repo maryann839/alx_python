@@ -95,7 +95,7 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
-         return self.__x
+         return self.__y
    
     """
     Setters for private attributes, y"""
