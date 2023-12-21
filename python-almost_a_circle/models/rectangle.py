@@ -174,7 +174,7 @@ class Rectangle(Base):
     def __validate_non_negative(self, value, attribute_name):
        """
          validation of the model"""
-       if value <=0:
+       if value < 0:
           """
          validation of the model"""
           raise ValueError(f'{attribute_name} must be >= 0')
