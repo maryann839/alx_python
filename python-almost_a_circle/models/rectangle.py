@@ -12,10 +12,14 @@ class Rectangle(Base):
 
         """
         private attributes of the class"""
-        self.__width =width
-        self.__height = height
-        self.__x = x 
-        self.__y = y
+        self.__width = 0
+        self.width = width
+        self.__height = 0
+        self.height= height
+        self.__x = 0
+        self.x = x
+        self.__y = 0
+        self.y = y
     """
     a fuction to get the private attributes
     getters for private attributes width 
@@ -40,8 +44,8 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
-        # self.__validate_interger(value, 'width')
-        # self.__validate_positive(value, 'width')
+         self.__validate_interger(value, 'width')
+         self.__validate_positive(value, 'width')
          self.__width = value
     
     """
@@ -65,6 +69,8 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
+         self.__validate_interger(value, 'height')
+         self.__validate_positive(value, 'height')
          self.__height = value
 
     """
@@ -85,6 +91,8 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
+         self.__validate_interger(value, 'x')
+         self.__validate_non_negative(value, 'x')
          self.__x = value
 
     """
@@ -105,6 +113,8 @@ class Rectangle(Base):
     setter for private attributes width 
     this shows the accesibility of the private attribute width
     a setter is also assigned to it"""
+         self.__validate_interger(value, 'y')
+         self.__validate_non_negative(value, 'y')
          self.__y = value
     
     def area(self):
@@ -126,6 +136,17 @@ class Rectangle(Base):
     """
     method of validation
     """
+    def __validate_interger(self, value, attribute_name):
+         if not isinstance(value, int):
+              raise TypeError(f'{attribute_name} must be an integer')
+         
+    def __validate_positive(self, value, attribute_name):
+       if value <=0:
+          raise ValueError(f'{attribute_name} must be > 0')
+       
+    def __validate_non_negative(self, value, attribute_name):
+       if value <=0:
+          raise ValueError(f'{attribute_name} must be >= 0')
    
     
     
