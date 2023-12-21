@@ -14,7 +14,8 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x 
         self.__y = y
-
+    """
+    getters for private attributes """
     def get_width(self):
         return self.__width
 
@@ -23,24 +24,32 @@ class Rectangle(Base):
         self.__validate_positive(value, 'width')
         self.__width = value
     
+    """
+    getters for private attributes """
     def get_height(self):
         return self.__height
 
     def set_height(self, value):
         self.__height = value
 
+    """
+    getters for private attributes """
     def get_x(self):
         return self.__x
 
     def set_x(self, value):
         self.__x = value
 
+    """
+    getters for private attributes """
     def get_y(self):
         return self.__x
 
     def set_y(self, value):
         self.__x = value
     
+    """
+    string """
     def __str__(self):
         return super().__str__()
     
