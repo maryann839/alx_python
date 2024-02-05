@@ -3,6 +3,7 @@
 """ this involves the creation of a class that defines 
 a square by a private  instance attributes, instantiation with  type/value
 a type error included and no module was imported """
+
 class Square:
      """ specifying the attributes using __init__ """
      def __init__(self, size=0):
