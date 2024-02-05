@@ -4,7 +4,8 @@
 a square by a private  instance attributes, instantiation with  type/value
 a type error included and no module was imported """
 class Square:
-    def __init__(self, size=0):
+     """ specifying the attributes using __init__ """
+     def __init__(self, size=0):
         if not isinstance(size, int):
            raise TypeError("size must be an integer")
         elif size < 0:
