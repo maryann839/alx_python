@@ -1,8 +1,9 @@
 #!/usr/bin/env python3class Square:
 
-# this is the class Square
-
- 
+""" this involves the creation of a class that defines 
+a square by a private  instance attributes, instantiation with no type/value
+and no module was imported """
+  
 class Square:
     # specifying the attributes using __init__ 
     def __init__(self, size):
@@ -14,14 +15,7 @@ class Square:
         self.__size = size
         
     
-    # getters
-   
-    def get_size(self):
-        return self.__size
     
-    # def set_size(self, value):
-    #         self.__size = value
-
 
 
 
