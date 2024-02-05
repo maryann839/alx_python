@@ -8,7 +8,7 @@ def inherits_from(obj, a_class):
     if type(obj) is a_class:
         return False
     else:
-        for base_class in type.__bases__:
+        for base_class in type(obj).__bases__:
             if inherits_from(base_class, a_class):
                 return True
         return False    
