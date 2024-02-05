@@ -13,11 +13,11 @@ class Square:
         self.__size = 0
         self.size = size 
 
+     def area(self):
+        return self.__size ** 2
+
+     @property
+     def size(self):
+        return self.__size 
+
 square1 = Square()
-
-def area(self):
-    return self.__size ** 2
-
-@property
-def size(self):
-    return self.__size 
