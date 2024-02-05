@@ -19,14 +19,14 @@ class Square:
         self.__size = 0
         self.size = size 
 
-     def area(self):
-        """ this calculates the area of a square """
-        return self.__size ** 2
+def area(self):
+    """ this calculates the area of a square """
+    return self.__size ** 2
 
-     @property
-     def size(self):
-        """ this assigns self.__size to size """
-        return self.__size 
+@property
+def size(self):
+    """ this assigns self.__size to size """
+    return self.__size 
      
 """ this calculates the area of a square  """
 square1 = Square()
