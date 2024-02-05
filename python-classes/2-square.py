@@ -31,5 +31,5 @@ class Square:
         a square by a private  instance attributes, instantiation with  type/value
         a type error included and no module was imported """
         return self.__size 
-
+""" this calculates the area of a square  """
 square1 = Square()
