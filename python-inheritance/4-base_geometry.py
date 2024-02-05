@@ -8,7 +8,7 @@ class BaseGeometry:
         """ Not implemented """
         raise Exception("area() is not implemented")
     
-print(dir(bg))
+
 
 
     
