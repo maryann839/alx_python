@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ A class that inherits 5-base_geometry.py from previous file"""
-BaseGeometry = __import__('5-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """ A basegeometry class"""
