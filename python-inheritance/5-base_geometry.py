@@ -19,6 +19,6 @@ class BaseGeometry:
             NameError if not a string"""
          
          if not isinstance(value, int):
-             raise TypeError
+             raise TypeError("<name> must be an integer")
          if value <= 0:
-             raise NameError
+             raise NameError("<name> must be greater than 0")
