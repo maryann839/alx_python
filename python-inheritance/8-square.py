@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ A class that inherits 7-rectangle.py from previous file"""
-BaseGeometry = __import__('7-rectangle').BaseGeometry
+Rectangle = __import__('7-rectangle').Rectangle
 
 class Square(Rectangle):
     """ A square class using basegeometry class
