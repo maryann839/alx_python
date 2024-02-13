@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 a class Square that inherits from a Rectangle"""
 
@@ -16,6 +17,7 @@ class Square(Rectangle):
     
     @size.setter
     def size(self, value):
+       """ setter for the size"""
        self.width = value
        self.height = value
 
