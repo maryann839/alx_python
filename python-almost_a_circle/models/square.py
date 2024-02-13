@@ -2,7 +2,7 @@
 """
 a class Square that inherits from a Rectangle"""
 
-from modes.rectangle import Rectangle
+from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """ this class represents a square"""
