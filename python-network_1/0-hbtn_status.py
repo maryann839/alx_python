@@ -2,7 +2,7 @@
 """ request a url https://intranet.hbtn.io"""
 
 import requests
-import sys
+
 
 
 if __name__== "__main__":
