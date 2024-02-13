@@ -11,6 +11,6 @@ if __name__== "__main__":
         if x_request_id:
             print(x_request_id)
         else:
-            print()
+            print('None')
     else:
         print(f'Failed to retrieve data. Status Code: {response.status_code}')
