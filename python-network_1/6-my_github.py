@@ -10,6 +10,6 @@ if __name__== "__main__":
     response = requests.get(url, auth=auth)
     try:
         user_data = response.json()
-        print('Github user ID:', user_data.get('id'))
+        print(user_data.get('id'))
     except ValueError:
         print('Error: Invalid JSON response from Github API')
