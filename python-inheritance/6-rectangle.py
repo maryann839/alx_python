@@ -5,6 +5,16 @@ BaseGeometry = __import__('5-base_geometry').BaseGeometry
 class Rectangle(BaseGeometry):
     """ A basegeometry class"""
 
+    def __dir__(cls) -> None:
+        """list all attribute except the __init_subclass__"""
+        attributes = super().__dir__()
+        dir_to_return = []
+        for attribute in attributes:
+            if attribute != "__init_subclass__":
+                dir_to_return.append(attribute)
+        return dir_to_return
+
+
     def area(self):
         """ Not implemented """
         raise Exception("area() is not implemented")
@@ -15,7 +25,7 @@ class Rectangle(BaseGeometry):
             name (str): the name of the value 
             value(int): the value to be validated
          
-         Raises 
+         Raises a
             TypeError if not an interger
             NameError if not a string"""
          
