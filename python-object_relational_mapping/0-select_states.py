@@ -1,23 +1,13 @@
 import MySQLdb
+import sys
 
-
+print(sys.argv)
 host = 'localhost'
 port = 3306
-username = 'root'
-password = '@Nadiaann839'
-database = "hbtn_0e_0_usa"
+username = sys.argv[1]
+password = sys.argv[2]
+database = sys.argv[3]
 
-
-connection = MySQLdb.connect(host=host, port=port, user=username, passwd=password, database=database)
-cursor = connection.cursor()
-import MySQLdb
-
-
-host = 'localhost'
-port = 3306
-username = 'root'
-password = '@Nadiaann839'
-database = "hbtn_0e_0_usa"
 
 
 connection = MySQLdb.connect(host=host, port=port, user=username, passwd=password, database=database)
