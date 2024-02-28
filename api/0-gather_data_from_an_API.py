@@ -32,8 +32,7 @@ def get_employee_info(employee_id, num_taks=11):
     
     print(f"Employee {EMPLOYEE_NAME} is done with tasks({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):")
     for task in todo_data:
-        transformed_title = task['title'].replace(" ", "S").replace("\t", "T")
-        print(f"\t{transformed_title}")
+        print(f"\t {task['title']}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
