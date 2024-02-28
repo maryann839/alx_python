@@ -3,7 +3,7 @@
 import requests
 import sys
 
-def get_employee_info(employee_id):
+def get_employee_info(employee_id, num_taks=11):
     """Get the endpoint"""
     employee_url = "https://jsonplaceholder.typicode.com/users/{}"
     employee_response = requests.get(employee_url.format(employee_id))
