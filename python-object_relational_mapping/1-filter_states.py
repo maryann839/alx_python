@@ -26,10 +26,10 @@ cursor = connection.cursor()
 query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
 cursor.execute(query)
 
-records = cursor.fetchall()
+states = cursor.fetchall()
 
-for x in records:
-    print(x)
+for state in states:
+    print(state)
 
 
 
