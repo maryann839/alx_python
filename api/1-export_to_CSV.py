@@ -1,8 +1,8 @@
 #!/usr/bin/python3 
 
-import requests
 import csv
-import sys
+import requests 
+import sys 
 
 def get_employee_tasks(employee_id):
     """Get the endpoint"""
