@@ -32,7 +32,9 @@ def get_employee_tasks(user_id):
         return None
 
     csv_filename = f"{user_id}.csv"
-    with open(str(id) + ".csv", 'r') as f:
+    with open(str(user_id) + ".csv", 'w', newline="") as f:
+
+
          fieldnames = ['user_id', 'username', 'task_completed_status', 'task_title']
          writer = csv.DictWriter(f, fieldnames=fieldnames)
         
