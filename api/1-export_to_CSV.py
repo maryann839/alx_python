@@ -1,7 +1,7 @@
 #!/usr/bin/python3 
 
 """
-this is a python file that export it's data to json"""
+this is a python file that export it's data to csv"""
 import csv
 import requests 
 import sys 
@@ -32,9 +32,9 @@ def get_employee_tasks(user_id):
         return None
 
     csv_filename = f"{user_id}.csv"
-    with open(csv_filename, 'w', newline="") as csvfile:
+    with open(str(id) + ".csv", 'r') as f:
          fieldnames = ['user_id', 'username', 'task_completed_status', 'task_title']
-         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+         writer = csv.DictWriter(f, fieldnames=fieldnames)
         
          row = [{
                  'user_id': user_id,
