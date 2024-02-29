@@ -33,10 +33,11 @@ def get_export_json(user_id):
     
     employee_tasks = []
     for task in todo_data:
-        employee_tasks.append( {
+        employee_tasks.append({"USER_ID": [{
             "task": task['title'],
             "completed": task['completed'],
-            "username": username})
+            "username": username,
+        }]})
         
 
     json_filename = f"{user_id}.json"
