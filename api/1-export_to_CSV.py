@@ -33,11 +33,9 @@ def get_employee_tasks(employee_id):
     with open(csv_filename, 'w', newline="") as csvfile:
          fieldnames = ['user_id', 'username', 'task_completed_status', 'task_title']
          writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-         writer.writeheader()
-
+        
          for task in task_data:
-             
-             writer.writerow({
+                writer.writerow({
                  'user_id': user_id,
                  'username': username,
                  'task_completed_status': task['completed'],

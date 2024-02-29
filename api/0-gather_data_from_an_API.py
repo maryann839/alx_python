@@ -3,7 +3,7 @@
 import requests
 import sys
 
-def get_employee_info(employee_id, num_taks=11):
+def get_employee_info(employee_id):
     """Get the endpoint"""
     employee_url = "https://jsonplaceholder.typicode.com/users/{}"
     employee_response = requests.get(employee_url.format(employee_id))
@@ -25,14 +25,17 @@ def get_employee_info(employee_id, num_taks=11):
         print(f"Failed to retrieve employee's todos:{employee_response.status_code}")
         return None
     
-    EMPLOYEE_NAME = employee_details['name']
-    completed_tasks = sum(todo['completed'] for todo in todo_data)
-    NUMBER_OF_DONE_TASKS = completed_tasks
-    TOTAL_NUMBER_OF_TASKS = len(todo_data)
+    employee_name = employee_details['name']
+    completed_tasks = sum(task['completed'] for task in todo_data)
+    number_of_done_tasks = completed_tasks
+    total_number_of_tasks = len(todo_data)
     
-    print(f"Employee {EMPLOYEE_NAME} is done with tasks({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):")
+    print(f"Employee {employee_name} is done with tasks({number_of_done_tasks}/{total_number_of_tasks }):")
     for task in todo_data:
-        print(f"\t {task['title']}")
+        if task['completed']:
+         print(f"\t {task['title']}")
+
+       
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -48,10 +51,9 @@ if __name__ == "__main__":
 
 
 
+
+
     
-
-
-
 
 
 
