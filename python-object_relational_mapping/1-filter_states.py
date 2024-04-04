@@ -1,24 +1,19 @@
 import MySQLdb
+from urllib.parse import quote_plus
+import sys
 
 
+if len(sys.argv) != 4:
+    print("Usage: python 8-add_retrieve_users.py <db_username> <db_password> <db_name>")
+    sys.exit(1)
+
+username = sys.argv[1]
+password = sys.argv[2]
+database = sys.argv[3]
 host = 'localhost'
 port = 3306
-username = 'root'
-password = '@Nadiaann839'
-database = "hbtn_0e_0_usa"
 
-
-connection = MySQLdb.connect(host=host, port=port, user=username, passwd=password, database=database)
-cursor = connection.cursor()
-import MySQLdb
-
-
-host = 'localhost'
-port = 3306
-username = 'root'
-password = '@Nadiaann839'
-database = "hbtn_0e_0_usa"
-
+encoded_password = quote_plus(password)
 
 connection = MySQLdb.connect(host=host, port=port, user=username, passwd=password, database=database)
 cursor = connection.cursor()
